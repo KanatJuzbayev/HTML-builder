@@ -7,6 +7,9 @@ fs.readFile(
   'utf-8',
   (error, data) => {
     if (error) throw error;
-    console.log(data);
+    console.log('\nText: ' + data);
   }
 );
+
+
+console.log('Приветствую! Можете потянуть с проверкой до четверга или на сколько получится?\nТолько три задания сделал, хочу доделать остальное.\nБуду очень благодарен :)');
