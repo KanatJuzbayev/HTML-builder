@@ -17,9 +17,8 @@ function getFilesInfo(foldName) {
               console.log(
                 (file.name.split('.').shift() + ' - ' +
                 file.name.split('.').pop() + ' - ' +
-                stats.size + 'b'));
-            } else {
-              getFilesInfo('secret-folder/image.jpg');
+                stats.size + 'b')
+              );
             }
           }
         });
