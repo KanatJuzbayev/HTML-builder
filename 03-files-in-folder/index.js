@@ -13,12 +13,11 @@ function getFilesInfo(foldName) {
           if (err) {
             console.log(`${file.name}: This folder is empty, or there is no such file or directory`);
           } else {
-            let size = stats.size;
-            if (stats.size !== 0) {
+            if (stats.isFile()) {
               console.log(
                 (file.name.split('.').shift() + ' - ' +
                 file.name.split('.').pop() + ' - ' +
-                size + 'b'));
+                stats.size + 'b'));
             } else {
               getFilesInfo('secret-folder/image.jpg');
             }
