@@ -18,6 +18,7 @@ process.stdin.on('data', data => {
     });
 
   console.log(`Added: ${data.toString()}`);
+  console.log('To exit press "ctrl + C"');
 });
 
 process.on('SIGINT', () => {
