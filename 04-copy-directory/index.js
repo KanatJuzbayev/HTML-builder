@@ -4,7 +4,7 @@ const path = require('path');
 function createDirectory(folderName) {
   fs.mkdir(path.join(__dirname, folderName), (err) => {
     if (err) {
-      return console.error(`'${folderName}'` + ' - Directory already exists');
+      return console.error(`'${folderName}'` + ' :');
     }
     console.log(`'${folderName}'` + ' - Directory created successfully!');
   });
